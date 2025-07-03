@@ -1,7 +1,7 @@
 // src/composables/useRequest.ts
 import { ref } from 'vue';
 import type { AxiosRequestConfig, AxiosResponse } from 'axios';
-import { api } from '../../src/lib/axios';
+import { api } from '@/lib/axios';
 
 export function useRequest<T = any>() {
   const data = ref<T | null>(null);
